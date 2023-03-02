@@ -93,7 +93,11 @@ class MethodChannelFullPackage extends FullPackagePlatform {
     });
 
     if (response != null && response != "Error") {
-      return jsonDecode(response);
+      try {
+        return jsonDecode(response);
+      } catch (_) {
+        return null;
+      }
     }
 
     return null;
