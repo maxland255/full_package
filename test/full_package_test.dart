@@ -43,6 +43,18 @@ class MockFullPackagePlatform
     // TODO: implement filePicker
     throw UnimplementedError();
   }
+
+  @override
+  Future<bool?> openAppSettingsURL() {
+    // TODO: implement openAppSettingsURL
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<bool?> openNotificationSettingsURL() {
+    // TODO: implement openNotificationSettingsURL
+    throw UnimplementedError();
+  }
 }
 
 void main() {

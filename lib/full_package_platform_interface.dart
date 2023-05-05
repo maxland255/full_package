@@ -52,4 +52,13 @@ abstract class FullPackagePlatform extends PlatformInterface {
       bool canCreateDirectories) async {
     throw UnimplementedError('filePicker() has not been implemented.');
   }
+
+  Future<bool?> openAppSettingsURL() async {
+    throw UnimplementedError('openAppSettingsURL() has not been implemented.');
+  }
+
+  Future<bool?> openNotificationSettingsURL() async {
+    throw UnimplementedError(
+        'openNotificationSettingsURL() has not been implemented.');
+  }
 }

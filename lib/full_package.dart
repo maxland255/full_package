@@ -41,4 +41,12 @@ class FullPackage {
       canCreateDirectories,
     );
   }
+
+  Future<bool?> openAppSettingsURL() async {
+    return FullPackagePlatform.instance.openAppSettingsURL();
+  }
+
+  Future<bool?> openNotificationSettingsURL() async {
+    return FullPackagePlatform.instance.openNotificationSettingsURL();
+  }
 }

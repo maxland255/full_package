@@ -102,4 +102,17 @@ class MethodChannelFullPackage extends FullPackagePlatform {
 
     return null;
   }
+
+  @override
+  Future<bool?> openAppSettingsURL() async {
+    final opened = await methodChannel.invokeMethod<bool>("openAppSettingsURL");
+    return opened;
+  }
+
+  @override
+  Future<bool?> openNotificationSettingsURL() async {
+    final opened =
+        await methodChannel.invokeMethod<bool>("openNotificationSettingsURL");
+    return opened;
+  }
 }
